@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <script src="https://d3plus.org/js/d3plus-plot.v0.8.full.min.js"></script>
+
+
+  <style>
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+  </style>
+
+</head>
+
+
+<body></body>
+
+<script>
+
+  var data = [
+    {id: "Hispanic Women", x: "Household Income", y: 41204.44},
+    {id: "White Women",  x: "Household Income", y: 55159.67},
+    {id: "All Races",  x: "Household Income", y: 41956.67},
+    {id: "Hispanic Women", x: "Individual Income (Excluding Spouse)", y: 30064.22},
+    {id: "White Women",  x: "Individual Income (Excluding Spouse)", y: 29426.89},
+    {id: "All Races",  x: "Individual Income (Excluding Spouse)", y:25835.44}
+  ];
+    
+
+  new d3plus.BarChart()
+    .data(data)
+    .render();
+
+
+</script> 
+</html> 

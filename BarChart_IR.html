@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <script src="https://d3plus.org/js/d3plus-plot.v0.8.full.min.js"></script>
+
+
+  <style>
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+  </style>
+
+</head>
+
+
+<body></body>
+
+<script>
+
+  var data = [
+    {id: "Hispanic Women", x: "Incarceration Rate", y: 0.001},
+    {id: "White Women",  x: "Incarceration Rate", y:  0.0006},
+    {id: "All Races",  x: "Incarceration Rate", y: 0.0011},
+  ];
+    
+
+  new d3plus.BarChart()
+    .data(data)
+    .render();
+
+
+</script> 
+</html> 

@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <script src="https://d3plus.org/js/d3plus-network.v0.5.full.min.js"></script>
+        <style>
+
+            body {
+            margin-block: 200;
+            overflow: hidden;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+    </body>
+
+    <script>
+
+        var links = [
+      {"source": "Women's Life", "target": "Education"},
+      {"source": "Women's Life", "target": "Growth Experience"},
+      {"source": "Education", "target": "High school Graduation Rate"},
+      {"source": "Education", "target": "College School Graduation Rate"},
+      {"source": "Employment Rate", "target": "Income & Employment"},
+      {"source": "Household Income", "target": "Income & Employment"},
+      {"source": "Individual Income","target": "Income & Employment"},
+      {"source": "Income & Employment","target":"Women's Life"},
+      {"source": "Teenage Birth Rate", "target": "Growth Experience"},
+      {"source": "Incarceration Rate", "target": "Growth Experience"}      
+        ];
+  
+        new d3plus.Rings()
+        .links(links)
+        .label(d => d.id)
+        .center("Women's Life")
+        .render();
+
+    </script>
+
+</html>
+
